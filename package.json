@@ -1,0 +1,27 @@
+{
+  "name": "rsharness",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "rsbuild dev --open",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview"
+  },
+  "dependencies": {
+    "@harnessio/ff-javascript-client-sdk": "^1.28.0",
+    "@harnessio/ff-nodejs-server-sdk": "^1.8.3",
+    "@harnessio/ff-react-client-sdk": "^1.13.0",
+    "@splitsoftware/splitio": "^10.28.0",
+    "@splitsoftware/splitio-react": "^1.13.0",
+    "dotenv": "^16.4.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^1.0.13",
+    "@rsbuild/plugin-react": "^1.0.3",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.6.3"
+  }
+}

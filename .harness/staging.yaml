@@ -1,0 +1,4 @@
+environment:
+  name: staging
+  identifier: staging
+  type: PreProduction

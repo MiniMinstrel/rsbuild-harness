@@ -1,0 +1,28 @@
+pipeline:
+  name: gitRepo
+  identifier: gitRepo
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: testFlag
+        identifier: testFlag
+        description: ""
+        type: FeatureFlag
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: FlagConfiguration
+                  name: FlagConfiguration_1
+                  identifier: FlagConfiguration_1
+                  spec:
+                    feature: ENABLE_NEW_REACT_COMPONENT
+                    environment: test
+                    instructions:
+                      - identifier: SetFeatureFlagStateIdentifier
+                        type: SetFeatureFlagState
+                        spec:
+                          state: "on"
+                  timeout: 10m
